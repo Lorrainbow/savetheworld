@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="savetheworld",
-    version="0.0.1",
+    version="0.0.2",
     author="Lorraine Underwood",
     author_email="lorrainbow@gmail.com",
     description="Useful code for the 'Save the World with code' book",
