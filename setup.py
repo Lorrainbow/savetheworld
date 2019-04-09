@@ -6,11 +6,11 @@ with open("README.md", "r") as fh:
 setuptools.setup(
     name="savetheworld",
     version="0.0.1",
-    author="Phil Underwood",
-    author_email="beardydoc@gmail.com",
+    author="Lorraine Underwood",
+    author_email="lorrainbow@gmail.com",
     description="Useful code for the 'Save the World with code' book",
     long_description=long_description,
-    url="https://github.com/furbrain/savetheworld",
+    url="https://github.com/Lorrainbow/savetheworld",
     packages=setuptools.find_packages(),
     install_requires=["touchphat"],
     classifiers=[
