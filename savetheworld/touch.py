@@ -1,3 +1,4 @@
+from functools import partial
 from touchphat import *
 
 _status = [False]*6
@@ -24,8 +25,9 @@ def touched(pad):
             index = _names.index(str(pad).upper())
         except ValueError:
             raise ValueError("{} is not the name of a pad".format(pad))
+    return _status[index]
             
 for i in range(6):
-    on_touch(i, lambda: _pressed(i))
-    on_release(i, lambda: _released(i))
+    on_touch(i+1, partial(_pressed, i))
+    on_release(i+1, partial(_released, i))
         
