@@ -18,7 +18,7 @@ def send(from_email, to_email, message, password, server="smtp.gmail.com", port=
 		connection.login(from_email, password)
 		connection.sendmail(from_email, to_email, message)
 
-def sendFile(from_email, to_email, message, subject, password, attachment, server="smtp.gmail.com", port=465):
+def sendImage(from_email, to_email, message, subject, password, attachment, server="smtp.gmail.com", port=465):
 	#setup the email
 	msg = MIMEMultipart()
 	msg['Subject'] = subject
