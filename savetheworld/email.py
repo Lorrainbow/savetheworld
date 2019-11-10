@@ -19,6 +19,13 @@ def send(from_email, to_email, message, password, server="smtp.gmail.com", port=
 		connection.sendmail(from_email, to_email, message)
 
 def sendImage(from_email, to_email, message, subject, password, attachment, server="smtp.gmail.com", port=465):
+    """
+    Send an image by email
+	Use from_email and password to log in to server on specified port
+	(defaults are set to gmail server)
+	Then send an email to to_email with specified subject and message,
+	including attachment (which is the filename of an image)
+    """
 	#setup the email
 	msg = MIMEMultipart()
 	msg['Subject'] = subject
