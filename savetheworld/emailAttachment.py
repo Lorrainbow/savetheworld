@@ -5,7 +5,7 @@ from email.mime.image import MIMEImage
 from email.mime.multipart import MIMEMultipart
 import ssl
 
-def sendAttachment(from_email, to_email, message, subject, password, attachment, server="smtp.gmail.com", port=465):
+def sendFile(from_email, to_email, message, subject, password, attachment, server="smtp.gmail.com", port=465):
 	#setup the email
 	msg = MIMEMultipart()
 	msg['Subject'] = subject
